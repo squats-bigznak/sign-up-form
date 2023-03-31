@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-Up Form</title>
 </head>
 <body>
+    <div class="container">
+        <div class="sidebar">
+            <img class="pix" src="/Users/scottbruzenak/repos/sign-up-form/img/hills.jpeg">
+            <div class="banner">
+                UNLIMITED FREE SIGN UPS
+            </div>
+        </div>
+        <div class="content">
+            <div class="textheader">SIGN UP FOR AN UNENDING BARRAGE OF ADDITIONAL SIGN UP OPTIONS 
+            </div>
+            <div>
+                <form action="#">       
+                    <div>               
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]+" autocomplete="given-name" />
+                            
+                        <label for="mail">Email</label>
+                        <input name="email" id="email" type="email" autocomplete="off"/>
+                           
+                        <label for="pwd">Password</label>
+                        <input type="password" id="pwd" name="pwd" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                                " autocomplete="new-password" />
+                    </div>
+                
+                    <div> 
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]+" autocomplete="family-name" />
+
+                        <label for="phonenumber">Phone</label>
+                        <input type="phonenumber" id="phonenumber" name="user_phonenumber" pattern="\d{3}[\-]\d{3}[\-]\d{4}" autocomplete="tel" />
+                            
+                        <label for="confirmpwd">Confirm Password</label>
+                        <input type="password" id="confirmpwd" name="confirmpwd" />
+                              
+                    </div>
+                </form>
+            </div>
+            <div class="sumbitbox">
+                <button type="submit">SUBMIT</button>
+            </div>
+        
+        </div>
+        
+    </div>
     
 </body>
 </html>
